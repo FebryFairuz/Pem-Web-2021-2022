@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Praktikum 1 - Typhografi</title>
+    <style>
+        span{color: red;}
+    </style>
+</head>
+<body>
+    <!-- macam-macam tag Typografi -->
+    <h1>Contoh Heading</h1>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Tag Paragraph -->
+    <h1>Contoh Paragraph</h1>
+    <p>
+        Seperti mendiang <span>Lam Ching Ying</span> yang dikenal sebagai pengusir 
+        vampir dalam film klasik <b>Hong Kong</b>, <i>Pauline Wong</i> justru populer 
+        karena memainkan salah satu jenis vampir dalam Mr Vampire yang dirilis pertama kali pada tahun 1985. Ia bahkan dulu juga mendapat julukan sebagai hantu tercantik di industri hiburan China bersama Joey Wong.
+    </p>
+    <p>
+        Pada tanggal 1 Maret, <u>Rosanne Lui</u> yang merupakan penyanyi asal China membagikan beberapa foto yang diambilnya dengan beberapa selebriti lama, termasuk bersama Pauline Wong. 
+        <br /> Foto itu diambilnya saat ia sedang mengadakan tur konsernya di Amerika Serikat.
+    </p>
+    <p>Saya tinggal di <address>Jl. Kutilang Berbunyi No 09, Kota Bogor</address>. 
+        Quote of the day 
+        <blockquote>Hari ini pana, acnya mati</blockquote> 
+    </p>
+
+    <h1>Contoh List</h1>
+    <!-- Element list shape -->
+    <p>List bulet:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <p>List kotak:</p>
+    <ul type="square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <p>List angka:</p>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <p>List huruf:</p>
+    <ol type="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <h1>Contoh Element Block & Inline</h1>
+    <!--element block-->
+    <div>
+        <h1>Judul Berita</h1>
+        <p>Selain bermain dalam film vampir, ia juga kerap kali berperan dalam film supernatural lainnya. Pauline yang kini telah berusia 60 tahun sudah tak pernah menjadi sorotan publik sejak memutuskan untuk pensiun dari industri hiburan pada tahun 1990 an. Namun, beberapa waktu lalu, namanya kembali hadir di sejumlah berita utama</p>
+    </div>
+    <div>
+        <h2>Sub judul</h2>
+        <p>ini sub judul</p>
+    </div>
+
+    <header>
+        <h1>Penggunaan tag header</h1>
+    </header>
+    <footer>
+        <p>Ini penggunaan footer</p>
+    </footer>
+    <p>Ini contoh tag artikel 
+        <article>
+            Menurut laporan yang dikutip dari Asia One, Pauline Wong pindah ke Amerika Serikat setelah menikah dengan seorang pengusaha bernama Xu Lixin pada tahun 1991. Rupanya, sang vampir cantik ini pernah didiagnosis memiliki gangguan bipolar pada tahun 2002. Pauline bahkan dilaporkan pernah hampir melakukan bunuh diri dan mencoba menyakiti suaminya.
+        </article> 
+    </p>
+    
+    <main>...</main>
+    <section>...</section>
+
+    <!-- element inline-->
+    <span></span>
+
+
+    <h1>Contoh Link</h1>
+    <a href="https://www.detik.com/">Web Detik.com</a><br />
+    <p>
+        Menurut laporan yang dikutip dari Asia One, Pauline Wong pindah ke Amerika Serikat setelah menikah dengan seorang pengusaha bernama Xu Lixin pada tahun 1991. Rupanya, sang vampir cantik ini pernah didiagnosis memiliki gangguan bipolar pada tahun 2002. Pauline bahkan dilaporkan pernah hampir melakukan bunuh diri dan mencoba menyakiti suaminya.
+        Klik 
+        <a href="https://hot.detik.com/celeb/d-5990399/pemeran-vampir-ini-pernah-hampir-bunuh-diri-gegara-idap-bipolar?_ga=2.172748196.62097512.1647661549-480897585.1637075804">
+            disini
+        </a> 
+        untuk melanjutkan berita.
+    </p>
+
+    <h3>Jenis atribute 'target' Link</h3>
+    <ol>
+        <li>
+            <a href="https://www.detik.com/" target="_self">
+                Link dalam bentuk <i>_self</i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.detik.com/" target="_blank">
+                Link dalam bentuk <i>_blank</i>
+            </a>
+        </li>
+    </ol>
+
+    <h3>Element Gambar</h3>
+    <p>Contoh gambar dari internet:</p>
+    <img src="https://akcdn.detik.net.id/community/media/visual/2022/03/18/pauline-wong_169.png" 
+         alt="Gambar wanita bunuh diri" />
+    <p>Contoh gambar dari local project</p>  
+    <img src="./assets/media/img/nature.jpeg" alt="Nature" width="100" height="100" >
+
+    
+    <h2>Element Audio</h2>
+    <audio controls>
+        <source src="./assets/media/audio/audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Contoh Video</h1>
+    <video controls width="300" height="200" >
+        <source src="./assets/media/video/video.mp4" type="video/mp4"  />
+    </video>
+
+    <h1>Contoh Table</h1>
+    <p>full table</p>
+    <table border="1" width="200" >
+        <thead>
+            <tr>
+                <th>No</th>    
+                <th>Nama</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Febry</td>
+                <td>Tangerang</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Deni</td>
+                <td>Bogor</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Udin</td>
+                <td>Jakarta</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>:</td>
+                <td>3 orang</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>table merge</p>
+    <table border="1" width="200" >
+        <thead>
+            <tr>
+                <th>No</th>    
+                <th>Nama</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Febry</td>
+                <td>Tangerang</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Deni</td>
+                <td rowspan="2" >Bogor</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Udin</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" >Total</td>
+                <td>3 orang</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Contoh iFrame</h1>
+    <p>Menyematkan website</p>
+    <iframe src="https://www.wikipedia.org/" frameborder="1" width="500" height="300" ></iframe>
+    <p>Menyematkan gmaps</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.933502603903!2d106.65136545896534!3d-6.232936033685802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbc4b539ff61%3A0x9236080b6cc87b3!2sKayu%20Kayu%20Restaurant!5e0!3m2!1sen!2sid!4v1647667346255!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</body>
+</html>
