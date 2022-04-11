@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Form Daftar</h1>
+    <form action="" method="post">
+        <div>
+            <label>Fullname</label>
+            <input required type="text" name="fullname"/>
+        </div>
+
+        <div>
+            <label>email</label>
+            <input required type="email" name="email"/>
+        </div>
+
+        <div>
+            <label>password</label>
+            <input required type="password" name="password"/>
+        </div>
+
+        <div>
+            <label>Tgl Lahir</label>
+            <input required type="date" name="TglLahir"/>
+        </div>
+
+        <div>
+            <label>Upload Foto</label>
+            <input required type="file" name="UploadFoto"/>
+        </div>
+
+        <div>        
+            <label>Kelamin</label>
+            <input type="radio" name="Kelamin" value="P" /> 
+            Pria 
+            <input type="radio" name="Kelamin" value="W" /> 
+            Wanita
+        </div>
+
+        <div>
+            <label>Alamat</label>
+            <textarea required name="address" cols="10" rows="5">
+            </textarea>
+        </div>
+
+
+        <div>
+            <button type="cancel"  onclick="window.location.replace('Login.html')">cancel</button>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+</html>

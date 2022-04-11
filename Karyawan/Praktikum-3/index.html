@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h1>Contoh Form</h1>
+    <form action="" method="post" >
+        <div>
+            <label>Fullname:</label>
+            <input type="text" name="fullname" />
+        </div>
+
+        <div>        
+            <label>Password:</label>
+            <input type="password" name="password" />
+        </div>
+
+        <div>        
+            <label>Email:</label>
+            <input type="email" name="email" />
+        </div>        
+        
+        <div>        
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="M" /> 
+            Male 
+            <input type="radio" name="gender" value="F" /> 
+            Female 
+        </div>
+
+        <div>        
+            <label>Hobi:</label>
+            <input type="checkbox" name="hobi" value="1" /> 
+            Makan 
+            <input type="checkbox" name="hobi" value="2" /> 
+            Tidur 
+        </div>
+        
+        <div>
+            <label>City:</label>
+            <select name="city">
+                <option value="">Choose one</option>
+                <option value="1">Bogor</option>
+                <option value="2">Jakarta</option>
+                <option value="3">Tangerang</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Address</label>
+            <textarea name="address" cols="10" rows="5">
+            </textarea>
+        </div>
+
+        <div>
+            <button type="button">Button</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    
+</body>
+</html>

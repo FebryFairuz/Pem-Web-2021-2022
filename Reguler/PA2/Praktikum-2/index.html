@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Form</title>
+    <style>
+        #card{
+            background-image: url('./assets/media/img/bg-1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: auto;
+            width: 50%;
+            height: 300px;
+            border: 1px dashed blue;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h1>Element Form</h1>
+    <form action="link-back" method="POST" >
+        <p>
+            <label>Input Text</label>
+            <input type="text" name="fullname" value="Febry" readonly placeholder="Masukan nama lengkap" />
+        </p>
+        <p>
+            <label>Input Password</label>
+            <input type="password" name="password" value="" placeholder="Password harus 8 digit" />
+        </p>
+        <p>
+            <label>Genre Film</label>
+            <input type="checkbox" name="chekbox" value="1" checked /> Horor
+            <input type="checkbox" name="chekbox" value="2" /> Romatic
+            <input type="checkbox" name="chekbox" value="3" checked /> Comedi
+        </p>
+        <p>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="M" checked /> Male
+            <input type="radio" name="gender" value="F" /> Female
+        </p>
+        <p>
+            <label>File Upload</label>
+            <input type="file" name="file" />
+        </p>
+        <p>
+            <label>Textarea</label>
+            <textarea required name="address" cols="30" rows="10" ></textarea>
+        </p>
+        <p>
+            <label>Select Box</label>
+            <select name="ortu">
+                <option value="">Pilih salah satu</option>
+                <option value="ayah" selected>Ayah</option>
+                <option value="ibu" >Ibu</option>
+            </select>
+        </p>
+
+        <p>Button</p>
+        <button type="button">Button biasa</button>
+        <button type="reset">Button untuk clear form</button>
+        <button type="submit">Button untuk submit semua isian form ke Backend</button>
+    </form>
+
+    <h1>CSS Inline</h1>
+    <h1 style="text-align:center;">Centered Heading</h1>
+    <p style="text-align:center;">Centered paragraph.</p>
+    <h1 style="font-size:300%;">This is a heading</h1>
+    <p style="font-weight:bold;">This is a paragraph.</p>
+
+    <h1>CSS Internal</h1>    
+    <div id="card">
+        <div class="card-head">
+            <h3>Title</h3>
+        </div>
+        <div class="card-body">
+            <p>Hello word</p>
+        </div>
+    </div>
+    <style>
+        #card > .card-head{
+            border: 1px solid yellow;
+            /*JARAK SISI LUAR*/
+            margin:20px;
+            margin: 20px 10px 30px 50px;
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+
+            /*JARAK SISI DALAM*/
+            padding: 30px;
+            padding: 30px 60px 80px 10px;
+            padding-top: 30px;
+            padding-right: 60px;
+            padding-bottom: 80px;
+            padding-left: 10px;
+        }
+    </style>
+</body>
+</html>

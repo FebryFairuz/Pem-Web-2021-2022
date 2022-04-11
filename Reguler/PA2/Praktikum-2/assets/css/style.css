@@ -1,0 +1,42 @@
+html,body{
+    height: 100%;
+}
+body{
+    background-image: url('../media/img/nature.jpeg');
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 10%;
+}
+
+#login{
+    border: 1px solid chocolate;
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    padding: 50px;
+}
+
+.btn-group{
+    text-align: right;   
+}
+.btn-blue{
+    border: solid blue;
+    color: white;
+    background-color: blue;
+}
+#login button{
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+#login >h1{
+    text-align: center;
+}
+
+#login .form-group > input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+

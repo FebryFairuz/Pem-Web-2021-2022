@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{width: 100%; margin: 0 auto; }
+        .box{margin: 0 auto; border: 1px solid black; width: 300px; padding: 20px; }
+        .box h1 {text-align: center;}
+        .box input {width: 100%;}
+        .box label {text-transform:capitalize;}
+        .box form>div {margin-bottom:10px;}
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+    <h1>FORM LOGIN</h1>
+    <form action="" method="post">
+        <div>
+            <label>username</label><br>
+            <input required type="text" name="username"/>
+        </div>
+
+        <div>
+            <label>password</label><br>
+            <input required type="password" name="password"/>
+        </div>
+
+        <div>
+            <button type="button" onclick="window.location.replace('Daftar.html')">Daftar</button>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
