@@ -1,0 +1,77 @@
+body{
+	margin: 0 auto;
+	background: #f8f8f8;
+	font-family: calibri;
+}
+
+.container{
+	width:80%;	
+	margin : 2% auto;
+	
+}
+
+.card {
+	box-shadow: 2px 2px 5px 1px #888888;
+	padding: 15px;
+	background-color: white;
+	margin-bottom: 25px
+}
+
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 5px;
+}
+
+#personal-info{
+	display: flex
+}
+#personal-info > .profiles{
+	width: 80%;
+	float: left;
+	margin-right: 15px;
+	background-color: purple;
+	color: white;
+}
+#personal-info > .profiles h1{margin:0px;text-align: center;padding: 5px;color: white}
+#personal-info > .profiles .profile-pic{
+	width: 100%;
+	height:450px;
+}
+#personal-info > .biodata{
+	width: 100%;
+}
+#personal-info > .biodata{font-size: 18px;text-align: justify;}
+h1,h3{color: #6d3e82}
+table{width: 100%}
+table td{color: #484848}
+
+.schedules > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.schedules > ul  > li {
+  float: left;
+  margin-right: 15px;
+}
+.schedules > ul  > li a {
+  display: block;
+  color: #6d3e82;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #6d3e82;
+  border-radius: 5px
+}
+.schedules > ul  > li a:hover {
+  background-color: #6d3e82;
+  color: white;
+}
+.schedules > ul  > li:first-child a {background-color: #6d3e82;color: white;border-color: #6d3e82}
+.schedules > h1{margin-bottom: 15px}
+.row{display: flex;margin: 0 -10px}
+.row > .col{width: 60%;float: left;margin:0 10px;}
