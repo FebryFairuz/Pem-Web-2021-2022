@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        const objFeed = [
+          {id:1, title:"Web Security", desc:"Contoh serangan dari XSS ialah seperti pencurian data dengan mengirimkan sebuah link website yang berisi script mencurigakan tanpa diketahui oleh korban. Setelah korban mengklik link tersebut ternyata data pribadi (seperti username dan password) dari korban atau target telah diambil atau dimiliki oleh sang pengirim link tersebut, yg disebut sebagai Attacker. Serangan ini sering disebut dengan Phising Attacker.", body:"./img/img-1.png", creator:{id:3320190306,name:"Febri D Fairuz", avatar:"./img/ava-1.png"}  },
+          {id:2, title:"Code", desc:"I love ngoding-ngoding", body:"./img/img-2.jpeg", creator:{id:202310007,name:"Shania", avatar:"./img/ava-2.png"}  },
+          {id:3, title:"Joke force", desc:"Only if love was this simple like writing code!", body:"./img/img-3.jpeg", creator:{id:202310072,name:"Fajar", avatar:"./img/ava-1.png"}  },
+        ]
+        console.log(objFeed);
+        
+        objFeed.forEach(element => {
+          let cloneCard = $("#main-content").find("#feed:first").clone();
+          cloneCard.attr("key",element.id);
+          cloneCard.find(".avatar > img").attr("src",element.creator.avatar); 
+          cloneCard.find(".avatar > h3").text(element.creator.name); 
+          cloneCard.find(".avatar > span").text(element.creator.id); 
+
+          cloneCard.find(".img-content").attr("src",element.body); 
+          cloneCard.find(".message > .title").text(element.title); 
+          cloneCard.find(".message > .description").text(element.desc); 
+
+          $("#main-content").append(cloneCard);
+        });
+        $("#main-content").find(".card:first").remove();
+      });
+    </script>
+    <title>Quiz 1</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logos">
+            <a href="#">Pemograman Web</a>
+          </div>
+          <ul class="navbar">
+            <li>
+              <a class="active" href="">Home</a>
+            </li>
+            <li>
+                <a href="">Message</a>
+            </li>
+            <li>
+                <a href="">Notification</a>
+            </li>
+            <li>
+                <a href="">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-left" id="main-content">
+              
+              <!-- Template card content -->
+              <div class="card" id="feed">
+                <div class="card-header">
+                  <div class="avatar">
+                    <img src="./img/ava.jpeg" alt="avatar" />
+                    <h3>Febri D Fairuz</h3>
+                    <span>3320190306</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="content">
+                    <img src="./img/img-1.png" alt="img-1" class="img-content" />
+                    <div class="message">
+                      <span class="title">Title</span>
+                      <span class="description">Desc</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <form action="" id="form-comment" autocomplete="off">
+                    <div class="row">
+                      <textarea name="comment" placeholder="Add comment.." required></textarea>
+                      <button class="btn" type="submit">Post</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- End Template card content -->
+
+            </div>
+            <div class="col-right">
+              <div class="content"></div>
+              <footer>
+                &copy; 2022 Institute Bisnis dan Kesatuan Bogor
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
