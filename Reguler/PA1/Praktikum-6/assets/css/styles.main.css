@@ -1,6 +1,7 @@
 body {
   font-family: Poppins, Helvetica, "sans-serif";
 }
+.border-dashed{border-style: dashed !important; }
 .bg-purple {
   background-color: purple !important;
 }
@@ -27,6 +28,7 @@ body {
   --bs-btn-disabled-border-color: #800080b0;
   color: white;
 }
+.btn-purple:hover {color: white;}
 .card-toolbar {
   display: flex;
   align-items: center;
